@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Lexend";
+    src: url("LexendDeca.ttf");
+}
+@font-face {
+    font-family: "Big";
+    src: url("BigShouldersDisplay.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainCard{
+    display: flex;
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+.card1{
+    width: 400px;
+    height: 600px;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 15px 0 0 15px;
+}
+.card2{
+    width: 400px;
+    height: 600px;
+    background-color: hsl(184, 100%, 22%);
+}
+.card3{
+    width: 400px;
+    height: 600px;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 15px 15px 0;
+}
+h1{
+    font-family: "Big";
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    top: 17%;
+    left: 15%;
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    position: relative;
+    width: 280px;
+    font-size: 20px;
+    line-height: 30px;
+    top: 25%;
+    left: 15%;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend;
+}
+button{
+    position: relative;
+    top: 40%;
+    left: 15%;
+    width: 170px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+}
+.btn1:hover{
+    border: 2px solid white;
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+.btn2:hover{
+    border: 2px solid white;
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+.btn3:hover{
+    border: 2px solid white;
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+img{
+    position: relative;
+    left: 15%;
+    top: 10%;
+
+}
+.white{
+    width: 350px;
+    height: 5em;
+    display: none;
+}
+@media screen and (max-width: 1500px){
+    .mainCard{
+        display: block;
+        margin-top: 25em;
+        margin-bottom: 10em;
+        width: 350px;
+        height: 1500px;
+    }
+    .card1{
+        width: 350px;
+        height: 500px;
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0;
+    }
+    .card2{
+        width: 350px;
+        height: 500px;
+        background-color: hsl(184, 100%, 22%);
+    }
+    .card3{
+        width: 350px;
+        height: 500px;
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0px 10px 10px;
+    }
+    p{
+        font-size: 15px;
+        width: 230px;
+    }
+    button{
+        position: relative;
+        top: 32%;
+        left: 15%;
+        width: 170px;
+        height: 50px;
+        font-size: 17px;
+        border-radius: 30px;
+        font-weight: 600;
+        border: none;
+    }
+    .white{
+        width: 350px;
+        height: 7em;
+        display: block;
+    }    
+}
